@@ -1,0 +1,154 @@
+/* src/components/Question/Question.css */
+
+.question-view-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1e293b;
+  padding: 2rem 3rem;
+  border-radius: 15px;
+  border: 2px solid #334155;
+  width: 90%;
+  max-width: 1000px;
+  margin: 1rem auto;
+  animation: zoomIn 0.5s ease-in-out;
+}
+
+.question-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.question-header h2 {
+  font-size: 2.5rem;
+  color: #60a5fa;
+}
+
+.question-body {
+  width: 100%;
+  text-align: center;
+}
+
+.question-text {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+  color: #e2e8f0;
+}
+
+.options-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.option-button {
+  background-color: #334155;
+  border: 2px solid #475569;
+  color: #cbd5e1;
+  padding: 1.5rem;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.option-button:not(:disabled):hover {
+  border-color: #60a5fa;
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+/* --- Option States --- */
+.option-button.selected {
+  background-color: #3b82f6;
+  border-color: #60a5fa;
+  color: #fff;
+}
+
+.option-button.correct {
+  background-color: #22c55e;
+  border-color: #4ade80;
+  color: #fff;
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(74, 222, 128, 0.5);
+}
+
+.option-button.wrong {
+  background-color: #ef4444;
+  border-color: #f87171;
+  color: #fff;
+}
+
+.option-button.disabled {
+  background-color: #334155;
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+
+/* --- Action Buttons --- */
+.action-buttons-container {
+  display: flex;
+  gap: 2rem;
+  margin: 2.5rem 0;
+}
+
+.action-btn {
+  border: none;
+  color: #fff;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.action-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.pass-btn {
+  background: linear-gradient(45deg, #f59e0b, #facc15);
+}
+.pass-btn:not(:disabled):hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #facc15;
+}
+
+.view-answer-btn {
+  background: linear-gradient(45deg, #22c55e, #4ade80);
+}
+.view-answer-btn:not(:disabled):hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #4ade80;
+}
+
+.back-to-board {
+  background-color: #60a5fa;
+  color: #0f172a;
+  border: none;
+  padding: 1rem 2.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.back-to-board:hover {
+  background-color: #3b82f6;
+  box-shadow: 0 0 20px rgba(96, 165, 250, 0.5);
+}
+
+@keyframes zoomIn {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
