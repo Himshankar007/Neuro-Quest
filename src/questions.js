@@ -4,8 +4,14 @@ export const rounds = [
   {
     round: 1,
     name: "Round 1",
+    // --- INSTRUCTIONS FOR ROUND 1 ---
+    instructions: `Each round contains a set of questions.
+- Each question must be answered within 60 seconds.
+- A correct answer will earn +2 marks.
+- An incorrect answer will result in a deduction of 1 mark.
+- If a team chooses to pass a question, the passed question must be answered within 30 seconds and will earn +1 mark if answered correctly.`,
     questions: [
-      {
+        {
         id: 1,
         text: "Which of the following is NOT a characteristic of object-oriented programming?",
         options: ["Inheritance", "Encapsulation", "Polymorphism", "Compilation"],
@@ -818,7 +824,7 @@ export const rounds = [
       },
       {
         id: 117,
-        text: "Which of the following is an example of a interpreted language?",
+        text: "Which of the following is an example of an interpreted language?",
         options: ["Java", "C++", "Python", "C"],
         correctAnswer: "Python",
       },
@@ -1070,6 +1076,11 @@ export const rounds = [
   {
     round: 2,
     name: "Round 2",
+    instructions: `Each round contains a set of questions.
+- Each question must be answered within 60 seconds.
+- A correct answer will earn +2 marks.
+- An incorrect answer will result in a deduction of 1 mark.
+- If a team chooses to pass a question, the passed question must be answered within 30 seconds and will earn +1 mark if answered correctly.`,
     questions: [
       {
         id: 1,
@@ -1866,8 +1877,13 @@ export const rounds = [
   {
     round: 3,
     name: "Round 3",
+    instructions: `Each round contains a set of questions.
+- Each question must be answered within 60 seconds.
+- A correct answer will earn +2 marks.
+- An incorrect answer will result in a deduction of 1 mark.
+- No pass question option is available in these rounds.`,
     questions: [
-      {
+        {
         id: 1,
         text: "In computer networks, the protocol used for secure email transmission is:",
         options: ["SMTP", "IMAP", "POP3", "S/MIME"],
@@ -1875,215 +1891,6 @@ export const rounds = [
       },
       {
         id: 2,
-        text: "In operating systems, the Banker’s Algorithm is used for:",
-        options: [
-          "CPU Scheduling",
-          "Deadlock Avoidance",
-          "Memory Management",
-          "Disk Scheduling",
-        ],
-        correctAnswer: "Deadlock Avoidance",
-      },
-      {
-        id: 3,
-        text: "The “Turing Test” was proposed to evaluate a machine’s ability to:",
-        options: [
-          "Solve complex equations",
-          "Display intelligence equivalent to humans",
-          "Store large datasets",
-          "Perform faster computation",
-        ],
-        correctAnswer: "Display intelligence equivalent to humans",
-      },
-      {
-        id: 4,
-        text: "In expert systems, the “inference engine” is responsible for:",
-        options: [
-          "Storing facts",
-          "Drawing conclusions from rules and facts",
-          "Data preprocessing",
-          "Feature extraction",
-        ],
-        correctAnswer: "Drawing conclusions from rules and facts",
-      },
-      {
-        id: 5,
-        text: "Which is the oldest written language still in use today?",
-        options: ["Sanskrit", "Hebrew", "Tamil", "Greek"],
-        correctAnswer: "Tamil",
-      },
-      {
-        id: 6,
-        text: "Which search algorithm guarantees finding the optimal solution if the cost is uniform?",
-        options: ["Depth-First Search", "Breadth-First Search", "Hill Climbing", "Greedy Search"],
-        correctAnswer: "Breadth-First Search",
-      },
-      {
-        id: 7,
-        text: "The major drawback of heuristic search is:",
-        options: [
-          "Requires large memory",
-          "May not guarantee optimal solution",
-          "Cannot be used for games",
-          "Works only for linear data",
-        ],
-        correctAnswer: "May not guarantee optimal solution",
-      },
-      {
-        id: 8,
-        text: "Who was the first person to calculate the circumference of the Earth?",
-        options: ["Aristotle", "Pythagoras", "Eratosthenes", "Archimedes"],
-        correctAnswer: "Eratosthenes",
-      },
-      {
-        id: 9,
-        text: "Which evaluation metric is most suitable for an imbalanced classification problem?",
-        options: ["Accuracy", "Precision & Recall", "Mean Squared Error", "R² Score"],
-        correctAnswer: "Precision & Recall",
-      },
-      {
-        id: 10,
-        text: "In clustering, the “Elbow Method” is used for:",
-        options: [
-          "Determining the best distance metric",
-          "Finding the optimal number of clusters",
-          "Reducing overfitting",
-          "Handling missing values",
-        ],
-        correctAnswer: "Finding the optimal number of clusters",
-      },
-      {
-        id: 11,
-        text: "Which of the following problems is undecidable?",
-        options: [
-          "Sorting a list",
-          "Halting Problem",
-          "Finding shortest path in a graph",
-          "Binary Search",
-        ],
-        correctAnswer: "Halting Problem",
-      },
-      {
-        id: 12,
-        text: "In deep learning, dropout is used to:",
-        options: [
-          "Increase training speed",
-          "Prevent overfitting",
-          "Reduce dataset size",
-          "Improve gradient descent",
-        ],
-        correctAnswer: "Prevent overfitting",
-      },
-      {
-        id: 13,
-        text: "In AI, a “heuristic function” is used to:",
-        options: [
-          "Guarantee optimal solutions",
-          "Estimate the cost of reaching the goal",
-          "Eliminate the need for training",
-          "Reduce computation to zero",
-        ],
-        correctAnswer: "Estimate the cost of reaching the goal",
-      },
-      {
-        id: 14,
-        text: "Which AI approach uses “membership functions” to handle uncertainty?",
-        options: ["Expert Systems", "Fuzzy Logic", "Bayesian Networks", "Genetic Algorithms"],
-        correctAnswer: "Fuzzy Logic",
-      },
-      {
-        id: 15,
-        text: "In Natural Language Processing, “word embeddings” like Word2Vec are used to:",
-        options: [
-          "Convert words into numerical vectors",
-          "Compress datasets",
-          "Detect grammar errors",
-          "Increase dataset size",
-        ],
-        correctAnswer: "Convert words into numerical vectors",
-      },
-      {
-        id: 16,
-        text: "In compiler design, which phase is responsible for generating intermediate code?",
-        options: [
-          "Lexical Analysis",
-          "Syntax Analysis",
-          "Semantic Analysis",
-          "Intermediate Code Generation",
-        ],
-        correctAnswer: "Intermediate Code Generation",
-      },
-      {
-        id: 17,
-        text: "A knowledge representation scheme that uses nodes and edges is called:",
-        options: ["Decision Table", "Semantic Network", "Production Rules", "Truth Table"],
-        correctAnswer: "Semantic Network",
-      },
-      {
-        id: 18,
-        text: "In relational algebra, the “JOIN” operation is equivalent to:",
-        options: [
-          "Cartesian Product + Selection",
-          "Projection + Union",
-          "Intersection + Difference",
-          "Aggregation + Selection",
-        ],
-        correctAnswer: "Cartesian Product + Selection",
-      },
-      {
-        id: 19,
-        text: "The L1 regularization term in machine learning promotes:",
-        options: [
-          "Feature elimination (sparsity)",
-          "Smaller but non-zero coefficients",
-          "Overfitting",
-          "Higher bias",
-        ],
-        correctAnswer: "Feature elimination (sparsity)",
-      },
-      {
-        id: 20,
-        text: "Which neural network is specifically designed for sequence data like speech and text?",
-        options: ["CNN", "RNN", "GAN", "SOM"],
-        correctAnswer: "RNN",
-      },
-      {
-        id: 21,
-        text: "Which is the only continent without any active volcanoes?",
-        options: ["Asia", "Africa", "Australia", "Europe"],
-        correctAnswer: "Australia",
-      },
-      {
-        id: 22,
-        text: "Who wrote the book Arthashastra?",
-        options: ["Panini", "Kalidasa", "Chanakya (Kautilya)", "Patanjali"],
-        correctAnswer: "Chanakya (Kautilya)",
-      },
-      {
-        id: 23,
-        text: "Who was the first astronaut to perform a spacewalk?",
-        options: ["Yuri Gagarin", "Alexei Leonov", "Neil Armstrong", "John Glenn"],
-        correctAnswer: "Alexei Leonov",
-      },
-      {
-        id: 24,
-        text: "Which activation function helps solve the vanishing gradient problem in deep learning?",
-        options: ["Sigmoid", "Tanh", "ReLU", "Softmax"],
-        correctAnswer: "ReLU",
-      },
-      {
-        id: 25,
-        text: "In cryptography, RSA security is based on the difficulty of:",
-        options: [
-          "Discrete logarithm problem",
-          "Integer factorization problem",
-          "Matrix inversion problem",
-          "Hash collision problem",
-        ],
-        correctAnswer: "Integer factorization problem",
-      },
-      {
-        id: 26,
         text: "Which of the following is not a type of cache mapping technique?",
         options: [
           "Direct Mapping",
@@ -2094,13 +1901,18 @@ export const rounds = [
         correctAnswer: "Recursive Mapping",
       },
       {
-        id: 27,
-        text: "Which of the following is a non-parametric algorithm?",
-        options: ["Linear Regression", "K-Nearest Neighbors (KNN)", "Logistic Regression", "Naïve Bayes"],
-        correctAnswer: "K-Nearest Neighbors (KNN)",
+        id: 3,
+        text: "In Natural Language Processing, “word embeddings” like Word2Vec are used to:",
+        options: [
+          "Convert words into numerical vectors",
+          "Compress datasets",
+          "Detect grammar errors",
+          "Increase dataset size",
+        ],
+        correctAnswer: "Convert words into numerical vectors",
       },
       {
-        id: 28,
+        id: 4,
         text: "In databases, the highest level of isolation in transactions is:",
         options: [
           "Read Uncommitted",
@@ -2111,104 +1923,18 @@ export const rounds = [
         correctAnswer: "Serializable",
       },
       {
-        id: 29,
-        text: "Who was the first woman to win a Nobel Prize?",
-        options: ["Dorothy Hodgkin", "Marie Curie", "Rosalind Franklin", "Lise Meitner"],
-        correctAnswer: "Marie Curie",
-      },
-      {
-        id: 30,
-        text: "The book Origin of Species was written by:",
-        options: ["Charles Darwin", "Gregor Mendel", "Louis Pasteur", "James Watson"],
-        correctAnswer: "Charles Darwin",
-      },
-      {
-        id: 31,
-        text: "In Random Forest, each tree is trained on:",
+        id: 5,
+        text: "In expert systems, the “inference engine” is responsible for:",
         options: [
-          "The full dataset",
-          "A bootstrap sample of the dataset",
-          "Only outliers in the dataset",
-          "A single feature of the dataset",
+          "Storing facts",
+          "Drawing conclusions from rules and facts",
+          "Data preprocessing",
+          "Feature extraction",
         ],
-        correctAnswer: "A bootstrap sample of the dataset",
+        correctAnswer: "Drawing conclusions from rules and facts",
       },
       {
-        id: 32,
-        text: "Which metal has the highest melting point?",
-        options: ["Iron", "Tungsten", "Platinum", "Titanium"],
-        correctAnswer: "Tungsten",
-      },
-      {
-        id: 33,
-        text: "The river Nile flows into which sea?",
-        options: ["Red Sea", "Mediterranean Sea", "Arabian Sea", "Black Sea"],
-        correctAnswer: "Mediterranean Sea",
-      },
-      {
-        id: 34,
-        text: "The perceptron learning algorithm can only classify:",
-        options: [
-          "Non-linear data",
-          "Linearly separable data",
-          "Multi-class data",
-          "Temporal sequences",
-        ],
-        correctAnswer: "Linearly separable data",
-      },
-      {
-        id: 35,
-        text: "Which layer of the OSI model deals with encryption and compression?",
-        options: ["Transport Layer", "Session Layer", "Presentation Layer", "Application Layer"],
-        correctAnswer: "Presentation Layer",
-      },
-      {
-        id: 36,
-        text: "The first artificial satellite, Sputnik 1, was launched by which country?",
-        options: ["USA", "USSR (Soviet Union)", "Germany", "China"],
-        correctAnswer: "USSR (Soviet Union)",
-      },
-      {
-        id: 37,
-        text: "The AI term “Singularity” refers to:",
-        options: [
-          "A point where AI surpasses human intelligence",
-          "A failure in neural networks",
-          "Collapse of search algorithms",
-          "Limitation of reinforcement learning",
-        ],
-        correctAnswer: "A point where AI surpasses human intelligence",
-      },
-      {
-        id: 38,
-        text: "In Machine Learning, the “curse of dimensionality” mainly affects:",
-        options: [
-          "Training speed only",
-          "Model interpretability only",
-          "Distance-based algorithms like KNN",
-          "Linear regression only",
-        ],
-        correctAnswer: "Distance-based algorithms like KNN",
-      },
-      {
-        id: 39,
-        text: "In Operating Systems, “thrashing” is caused by:",
-        options: ["High CPU utilization", "High paging activity", "Deadlock", "Poor scheduling"],
-        correctAnswer: "High paging activity",
-      },
-      {
-        id: 40,
-        text: "The attention mechanism in AI was first introduced for which task?",
-        options: [
-          "Image Classification",
-          "Neural Machine Translation",
-          "Speech Recognition",
-          "Reinforcement Learning",
-        ],
-        correctAnswer: "Neural Machine Translation",
-      },
-      {
-        id: 41,
+        id: 6,
         text: "Which algorithm is used by Google’s AlphaGo to defeat human Go players?",
         options: [
           "A* Search",
@@ -2219,7 +1945,133 @@ export const rounds = [
         correctAnswer: "Deep Reinforcement Learning",
       },
       {
-        id: 42,
+        id: 7,
+        text: "Who was the first person to calculate the circumference of the Earth?",
+        options: ["Aristotle", "Pythagoras", "Eratosthenes", "Archimedes"],
+        correctAnswer: "Eratosthenes",
+      },
+      {
+        id: 8,
+        text: "The book Origin of Species was written by:",
+        options: ["Charles Darwin", "Gregor Mendel", "Louis Pasteur", "James Watson"],
+        correctAnswer: "Charles Darwin",
+      },
+      {
+        id: 9,
+        text: "The attention mechanism in AI was first introduced for which task?",
+        options: [
+          "Image Classification",
+          "Neural Machine Translation",
+          "Speech Recognition",
+          "Reinforcement Learning",
+        ],
+        correctAnswer: "Neural Machine Translation",
+      },
+      {
+        id: 10,
+        text: "Which of the following problems is undecidable?",
+        options: [
+          "Sorting a list",
+          "Halting Problem",
+          "Finding shortest path in a graph",
+          "Binary Search",
+        ],
+        correctAnswer: "Halting Problem",
+      },
+      {
+        id: 11,
+        text: "The first artificial satellite, Sputnik 1, was launched by which country?",
+        options: ["USA", "USSR (Soviet Union)", "Germany", "China"],
+        correctAnswer: "USSR (Soviet Union)",
+      },
+      {
+        id: 12,
+        text: "In clustering, the “Elbow Method” is used for:",
+        options: [
+          "Determining the best distance metric",
+          "Finding the optimal number of clusters",
+          "Reducing overfitting",
+          "Handling missing values",
+        ],
+        correctAnswer: "Finding the optimal number of clusters",
+      },
+      {
+        id: 13,
+        text: "The Bagging technique in ensemble learning mainly reduces:",
+        options: ["Bias", "Variance", "Both bias and variance equally", "Dimensionality"],
+        correctAnswer: "Variance",
+      },
+      {
+        id: 14,
+        text: "Which activation function helps solve the vanishing gradient problem in deep learning?",
+        options: ["Sigmoid", "Tanh", "ReLU", "Softmax"],
+        correctAnswer: "ReLU",
+      },
+      {
+        id: 15,
+        text: "The river Nile flows into which sea?",
+        options: ["Red Sea", "Mediterranean Sea", "Arabian Sea", "Black Sea"],
+        correctAnswer: "Mediterranean Sea",
+      },
+      {
+        id: 16,
+        text: "Which of the following is a non-parametric algorithm?",
+        options: ["Linear Regression", "K-Nearest Neighbors (KNN)", "Logistic Regression", "Naïve Bayes"],
+        correctAnswer: "K-Nearest Neighbors (KNN)",
+      },
+      {
+        id: 17,
+        text: "The major drawback of heuristic search is:",
+        options: [
+          "Requires large memory",
+          "May not guarantee optimal solution",
+          "Cannot be used for games",
+          "Works only for linear data",
+        ],
+        correctAnswer: "May not guarantee optimal solution",
+      },
+      {
+        id: 18,
+        text: "Which search algorithm guarantees finding the optimal solution if the cost is uniform?",
+        options: ["Depth-First Search", "Breadth-First Search", "Hill Climbing", "Greedy Search"],
+        correctAnswer: "Breadth-First Search",
+      },
+      {
+        id: 19,
+        text: "Which metal has the highest melting point?",
+        options: ["Iron", "Tungsten", "Platinum", "Titanium"],
+        correctAnswer: "Tungsten",
+      },
+      {
+        id: 20,
+        text: "In operating systems, the Banker’s Algorithm is used for:",
+        options: [
+          "CPU Scheduling",
+          "Deadlock Avoidance",
+          "Memory Management",
+          "Disk Scheduling",
+        ],
+        correctAnswer: "Deadlock Avoidance",
+      },
+      {
+        id: 21,
+        text: "In deep learning, dropout is used to:",
+        options: [
+          "Increase training speed",
+          "Prevent overfitting",
+          "Reduce dataset size",
+          "Improve gradient descent",
+        ],
+        correctAnswer: "Prevent overfitting",
+      },
+      {
+        id: 22,
+        text: "Which algorithm is used for machine translation in modern NLP systems?",
+        options: ["Hidden Markov Model", "Transformer", "Naïve Bayes", "Decision Tree"],
+        correctAnswer: "Transformer",
+      },
+      {
+        id: 23,
         text: "What is the key difference between model-based and model-free reinforcement learning?",
         options: [
           "Model-based uses environment dynamics, model-free does not",
@@ -2230,30 +2082,30 @@ export const rounds = [
         correctAnswer: "Model-based uses environment dynamics, model-free does not",
       },
       {
-        id: 43,
-        text: "GANs (Generative Adversarial Networks) consist of:",
-        options: ["Encoder + Decoder", "Generator + Discriminator", "Actor + Critic", "Teacher + Student"],
-        correctAnswer: "Generator + Discriminator",
-      },
-      {
-        id: 44,
-        text: "Q-learning is a type of:",
+        id: 24,
+        text: "In Machine Learning, the “curse of dimensionality” mainly affects:",
         options: [
-          "Supervised Learning",
-          "Reinforcement Learning",
-          "Unsupervised Learning",
-          "Semi-supervised Learning",
+          "Training speed only",
+          "Model interpretability only",
+          "Distance-based algorithms like KNN",
+          "Linear regression only",
         ],
-        correctAnswer: "Reinforcement Learning",
+        correctAnswer: "Distance-based algorithms like KNN",
       },
       {
-        id: 45,
-        text: "The Bagging technique in ensemble learning mainly reduces:",
-        options: ["Bias", "Variance", "Both bias and variance equally", "Dimensionality"],
-        correctAnswer: "Variance",
+        id: 25,
+        text: "Who wrote the book Arthashastra?",
+        options: ["Panini", "Kalidasa", "Chanakya (Kautilya)", "Patanjali"],
+        correctAnswer: "Chanakya (Kautilya)",
       },
       {
-        id: 46,
+        id: 26,
+        text: "This is a placeholder for the missing question in Round 3.",
+        options: ["Option A", "Option B", "Option C", "Option D"],
+        correctAnswer: "Option A",
+      },
+      {
+        id: 27,
         text: "The “frame problem” in AI is related to:",
         options: [
           "Difficulty in representing dynamic changes in the world",
@@ -2264,13 +2116,109 @@ export const rounds = [
         correctAnswer: "Difficulty in representing dynamic changes in the world",
       },
       {
-        id: 47,
-        text: "Which algorithm is used for machine translation in modern NLP systems?",
-        options: ["Hidden Markov Model", "Transformer", "Naïve Bayes", "Decision Tree"],
-        correctAnswer: "Transformer",
+        id: 28,
+        text: "In cryptography, RSA security is based on the difficulty of:",
+        options: [
+          "Discrete logarithm problem",
+          "Integer factorization problem",
+          "Matrix inversion problem",
+          "Hash collision problem",
+        ],
+        correctAnswer: "Integer factorization problem",
       },
       {
-        id: 48,
+        id: 29,
+        text: "In AI, a “heuristic function” is used to:",
+        options: [
+          "Guarantee optimal solutions",
+          "Estimate the cost of reaching the goal",
+          "Eliminate the need for training",
+          "Reduce computation to zero",
+        ],
+        correctAnswer: "Estimate the cost of reaching the goal",
+      },
+      {
+        id: 30,
+        text: "In relational algebra, the “JOIN” operation is equivalent to:",
+        options: [
+          "Cartesian Product + Selection",
+          "Projection + Union",
+          "Intersection + Difference",
+          "Aggregation + Selection",
+        ],
+        correctAnswer: "Cartesian Product + Selection",
+      },
+      {
+        id: 31,
+        text: "Which AI approach uses “membership functions” to handle uncertainty?",
+        options: ["Expert Systems", "Fuzzy Logic", "Bayesian Networks", "Genetic Algorithms"],
+        correctAnswer: "Fuzzy Logic",
+      },
+      {
+        id: 32,
+        text: "Which is the oldest written language still in use today?",
+        options: ["Sanskrit", "Hebrew", "Tamil", "Greek"],
+        correctAnswer: "Tamil",
+      },
+      {
+        id: 33,
+        text: "Which evaluation metric is most suitable for an imbalanced classification problem?",
+        options: ["Accuracy", "Precision & Recall", "Mean Squared Error", "R² Score"],
+        correctAnswer: "Precision & Recall",
+      },
+      {
+        id: 34,
+        text: "Who was the first woman to win a Nobel Prize?",
+        options: ["Dorothy Hodgkin", "Marie Curie", "Rosalind Franklin", "Lise Meitner"],
+        correctAnswer: "Marie Curie",
+      },
+      {
+        id: 35,
+        text: "A knowledge representation scheme that uses nodes and edges is called:",
+        options: ["Decision Table", "Semantic Network", "Production Rules", "Truth Table"],
+        correctAnswer: "Semantic Network",
+      },
+      {
+        id: 36,
+        text: "In compiler design, which phase is responsible for generating intermediate code?",
+        options: [
+          "Lexical Analysis",
+          "Syntax Analysis",
+          "Semantic Analysis",
+          "Intermediate Code Generation",
+        ],
+        correctAnswer: "Intermediate Code Generation",
+      },
+      {
+        id: 37,
+        text: "The “Turing Test” was proposed to evaluate a machine’s ability to:",
+        options: [
+          "Solve complex equations",
+          "Display intelligence equivalent to humans",
+          "Store large datasets",
+          "Perform faster computation",
+        ],
+        correctAnswer: "Display intelligence equivalent to humans",
+      },
+      {
+        id: 38,
+        text: "The L1 regularization term in machine learning promotes:",
+        options: [
+          "Feature elimination (sparsity)",
+          "Smaller but non-zero coefficients",
+          "Overfitting",
+          "Higher bias",
+        ],
+        correctAnswer: "Feature elimination (sparsity)",
+      },
+      {
+        id: 39,
+        text: "Which layer of the OSI model deals with encryption and compression?",
+        options: ["Transport Layer", "Session Layer", "Presentation Layer", "Application Layer"],
+        correctAnswer: "Presentation Layer",
+      },
+      {
+        id: 40,
         text: "In robotics, SLAM stands for:",
         options: [
           "Sequential Logic and Motion",
@@ -2281,24 +2229,95 @@ export const rounds = [
         correctAnswer: "Simultaneous Localization and Mapping",
       },
       {
-        id: 49,
+        id: 41,
+        text: "GANs (Generative Adversarial Networks) consist of:",
+        options: ["Encoder + Decoder", "Generator + Discriminator", "Actor + Critic", "Teacher + Student"],
+        correctAnswer: "Generator + Discriminator",
+      },
+      {
+        id: 42,
+        text: "In Operating Systems, “thrashing” is caused by:",
+        options: ["High CPU utilization", "High paging activity", "Deadlock", "Poor scheduling"],
+        correctAnswer: "High paging activity",
+      },
+      {
+        id: 43,
         text: "Gradient Descent can sometimes get stuck in:",
         options: ["Outliers", "Overfitting", "Local minima", "High variance"],
         correctAnswer: "Local minima",
       },
       {
-        id: 50,
-        text: "Describe the function of an activation layer in neural networks:",
-        options: ["Reduces model size", "Compiles the model", "Stores weights", "Introduces nonlinearity for complex functions"],
-        correctAnswer: "Introduces nonlinearity for complex functions",
+        id: 44,
+        text: "The AI term “Singularity” refers to:",
+        options: [
+          "A point where AI surpasses human intelligence",
+          "A failure in neural networks",
+          "Collapse of search algorithms",
+          "Limitation of reinforcement learning",
+        ],
+        correctAnswer: "A point where AI surpasses human intelligence",
       },
-    ],
+      {
+        id: 45,
+        text: "The perceptron learning algorithm can only classify:",
+        options: [
+          "Non-linear data",
+          "Linearly separable data",
+          "Multi-class data",
+          "Temporal sequences",
+        ],
+        correctAnswer: "Linearly separable data",
+      },
+      {
+        id: 46,
+        text: "Which neural network is specifically designed for sequence data like speech and text?",
+        options: ["CNN", "RNN", "GAN", "SOM"],
+        correctAnswer: "RNN",
+      },
+      {
+        id: 47,
+        text: "Q-learning is a type of:",
+        options: [
+          "Supervised Learning",
+          "Reinforcement Learning",
+          "Unsupervised Learning",
+          "Semi-supervised Learning",
+        ],
+        correctAnswer: "Reinforcement Learning",
+      },
+      {
+        id: 48,
+        text: "Who was the first astronaut to perform a spacewalk?",
+        options: ["Yuri Gagarin", "Alexei Leonov", "Neil Armstrong", "John Glenn"],
+        correctAnswer: "Alexei Leonov",
+      },
+      {
+        id: 49,
+        text: "Which is the only continent without any active volcanoes?",
+        options: ["Asia", "Africa", "Australia", "Europe"],
+        correctAnswer: "Australia",
+      },
+      {
+        id: 50,
+        text: "In Random Forest, each tree is trained on:",
+        options: [
+          "The full dataset",
+          "A bootstrap sample of the dataset",
+          "Only outliers in the dataset",
+          "A single feature of the dataset",
+        ],
+        correctAnswer: "A bootstrap sample of the dataset",
+      },
+],
   },
-  // This is the complete object for the Winner Round.
-// Replace the existing Winner Round object in your questions.js file with this.
   {
     round: 4,
     name: "Winner Round",
+    instructions: `Each round contains a set of questions.
+- Each question must be answered within 60 seconds.
+- A correct answer will earn +2 marks.
+- An incorrect answer will result in a deduction of 1 mark.
+- No pass question option is available in these rounds.`,
     questions: [
       {
         id: 1,
