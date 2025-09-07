@@ -21,13 +21,9 @@ This project was designed to provide an engaging experience with multiple quiz p
 ### 🏠 Event  
 ![Event](1.png)  
 
-### 📖 Instructions Page  
-![Instructions](assets/instructions.png)  
+### 📖 Starting Page 
+![Starting page](assets/instructions.png)  
 
-### ⏳ Timer Page  
-![Timer](assets/timer.png)  
-
-*(📌 Replace these with your actual screenshots later — I’ll guide you where to put them.)*  
 
 ---
 
