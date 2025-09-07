@@ -22,7 +22,7 @@ This project was designed to provide an engaging experience with multiple quiz p
 ![Event](1.png)  
 
 ### 📖 Starting Page 
-![Starting page](Screenshot 2025-09-07 200332.png)  
+![Starting page](Starting.png)  
 
 
 ---
