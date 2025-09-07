@@ -18,8 +18,8 @@ This project was designed to provide an engaging experience with multiple quiz p
 
 ## 📷 Screenshots  
 
-### 🏠 Landing Page  
-![Landing Page](assets/landing.png)  
+### 🏠 Event  
+![Event](assets/1.png)  
 
 ### 📖 Instructions Page  
 ![Instructions](assets/instructions.png)  
